@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "89765191381",
+    "project_id": "findcoder-aaab9",
+    "storage_bucket": "findcoder-aaab9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89765191381:android:f19c9333dcca9a2bb38c5c",
+        "android_client_info": {
+          "package_name": "com.example.findcoder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89765191381-j9qn0ab2nkefkt2dr81h5t8786okpc7r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFGhPv9A71YvDG5wYtp0HpeuyATW4IzGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89765191381-j9qn0ab2nkefkt2dr81h5t8786okpc7r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
