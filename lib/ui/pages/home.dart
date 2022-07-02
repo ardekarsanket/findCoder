@@ -1,0 +1,34 @@
+import 'package:findcoder/bloc/authentication/bloc.dart';
+import 'package:findcoder/repositories/user_repository.dart';
+import 'package:findcoder/ui/pages/splash.dart';
+import 'package:findcoder/ui/pages/tabs.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+class Home extends StatelessWidget {
+  final UserRepository _userRepository;
+
+  Home({required UserRepository userRepository})
+      : assert(userRepository != null),
+        _userRepository = userRepository;
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: BlocBuilder<AuthenticationBloc, AuthenticationState>(
+        builder: (context, state) {
+          if (state is Uninitialized) {
+            return Splash();
+          }
+          if (state is Authenticated) {
+            return Tabs(
+              userId: state.userId,
+            );
+          } else
+            return Container();
+        },
+      ),
+    );
+  }
+}
